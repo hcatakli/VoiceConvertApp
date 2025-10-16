@@ -3,6 +3,7 @@ Voice Studio is a mobile application built with React Native and Expo that allow
 Text to Speech (TTS) – Convert any text into natural-sounding speech using selectable AI voices.
 Speech to Text (STT) – Record your voice and get accurate transcriptions in real-time.
 Speech to Speech (STS) / Voice Conversion – Transform your recorded voice into another AI voice while preserving your speech content.
+We use the ElevenLabs for voice converting.
 
 ## Key Features
 - Multiple AI voices to choose from
@@ -19,20 +20,21 @@ Speech to Speech (STS) / Voice Conversion – Transform your recorded voice into
 **UI Components:** Lucide icons, LinearGradient, SafeAreaView
 
 ## Get started
-1. Clone the repository
+1. Get a api key from ElevenLabs or any app that works for this
+2. Clone the repository
    ```bash
    git clone https://github.com/hcatakli/ReactFlow-Learn-react-.git
    ```
-2. Run
+3. Run
    ```bash
    npm install or yarn install
    ```
-3. Start the app
+4. Start the app
 
    ```bash
     npx expo start
    ```
-4. Make sure the FastAPI backend is running for TTS/STT/STS endpoints
+5. Make sure the FastAPI backend is running for TTS/STT/STS endpoints
 
 ### Future Improvements
 Add more AI voices and multilingual support
