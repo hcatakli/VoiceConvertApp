@@ -3,10 +3,12 @@ Voice Studio is a mobile application built with React Native and Expo that allow
 Text to Speech (TTS) – Convert any text into natural-sounding speech using selectable AI voices.
 Speech to Text (STT) – Record your voice and get accurate transcriptions in real-time.
 Speech to Speech (STS) / Voice Conversion – Transform your recorded voice into another AI voice while preserving your speech content.
+English Dubbing – Automatically generate natural English dubbing from recorded or uploaded audio.
 We use the ElevenLabs for voice converting.
 
 ## Key Features
 - Multiple AI voices to choose from
+- English dubbing support for recorded speech
 - Real-time audio recording and playback
 - Interactive waveform visualization during audio playback
 - Responsive and user-friendly UI
@@ -15,29 +17,28 @@ We use the ElevenLabs for voice converting.
 ## Tech Stack
 **Frontend:** React Native, Expo, TypeScript
 **Audio Processing:** Expo Audio, expo-av, ElevenLabs
-**Backend:** FastAPI (Python) for handling TTS, STT, and STS requests
+**Backend:** FastAPI (Python) for handling TTS, STT, STS and Dubbing requests
 **State Management:** React Context & React Query
 **UI Components:** Lucide icons, LinearGradient, SafeAreaView
 
 ## Get started
-1. Get a api key from ElevenLabs or any app that works for this
-2. Clone the repository
+1. Get a api key from ElevenLabs or any compatible service.
+2. Clone the repository:
    ```bash
    git clone https://github.com/hcatakli/ReactFlow-Learn-react-.git
    ```
-3. Run
+3. Run:
    ```bash
    npm install or yarn install
    ```
-4. Start the app
-
+4. Start the app:
    ```bash
     npx expo start
    ```
 5. Make sure the FastAPI backend is running for TTS/STT/STS endpoints
 
 ### Future Improvements
-Add more AI voices and multilingual support
+Add more AI voices and multilingual dubbing support
 Save and share generated audio files
 Integrate offline TTS/STT models
 
